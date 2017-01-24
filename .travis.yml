@@ -1,6 +1,6 @@
 language: bash
 sudo: false
-script: bin/run.sh
+script: ./run.sh
 
 cache:
   directories:

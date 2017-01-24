@@ -1,5 +1,5 @@
 build: {
-  sbt-version: "0.13.8"
+  sbt-version: "0.13.13"
   cross-version: standard
   projects: [
   {
@@ -8,9 +8,10 @@ build: {
     uri:    "git://github.com/twitter/algebird#develop"
     extra: {
       run-tests: false,
-      exclude: [algebird-benchmark, algebird-spark]
+      exclude: [algebird-benchmark, algebird-spark, docs]
     }
-  }, {
+  },
+  {
     name:   bijection
     system: sbt
     uri:    "git://github.com/twitter/bijection#develop"
@@ -18,7 +19,8 @@ build: {
       run-tests: false,
       exclude: [bijection-avro, bijection-clojure, bijection-guava, bijection-jodatime, bijection-json4s, bijection-protobuf]
     }
-  }, {
+  },
+  {
     name:   chill
     system: sbt
     uri:    "git://github.com/twitter/chill#develop"
@@ -26,7 +28,8 @@ build: {
       run-tests: false,
       exclude: [chill-akka, chill-all, chill-avro]
     }
-  }, {
+  },
+  {
     name:   scalding
     system: sbt
     uri:    "git://github.com/twitter/scalding#develop"
@@ -34,15 +37,17 @@ build: {
       run-tests: false,
       exclude: [scalding-avro, scalding-benchmarks]
     }
-  }, {
+  },
+  {
     name:   storehaus
     system: sbt
     uri:    "git://github.com/twitter/storehaus#develop"
     extra: {
       run-tests: false,
-      exclude: [storehaus-hbase, storehaus-caliper, storehaus-dynamodb, storehaus-elasticsearch, storehaus-leveldb, storehaus-mongodb]
+      exclude: [storehaus-hbase, storehaus-dynamodb, storehaus-elasticsearch, storehaus-leveldb, storehaus-mongodb]
     }
-  }, {
+  },
+  {
     name:   summingbird
     system: sbt
     uri:    "git://github.com/twitter/summingbird#develop"
@@ -50,7 +55,8 @@ build: {
       run-tests: false,
       exclude: [summingbird-example]
     }
-  }, {
+  },
+  {
     name:   tormenta
     system: sbt
     uri:    "git://github.com/twitter/tormenta#develop"
