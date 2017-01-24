@@ -1,6 +1,7 @@
 language: bash
 sudo: false
 script: ./run.sh
+jdk: oraclejdk8
 
 cache:
   directories:
